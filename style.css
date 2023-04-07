@@ -38,7 +38,7 @@ main {
   padding: 20px;
 }
 
-main .image-container {
+main .header-image-container {
   width: 100%;
   height: 300px;
   border: solid 3px;
@@ -65,8 +65,32 @@ main .card {
   padding: 1em 1em;
 }
 
+.image-section-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.images {
+  width: 100%;
+  height: 250px;
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.grid-row-span-2 {
+  grid-column-start: 4;
+  grid-row: span 2;
+}
+
 @media screen and (max-width: 960px) {
-  main .image-container {
+  main .header-image-container {
     grid-column: 2 / span 10;
   }
   main .welcome {
