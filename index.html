@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-logo"><h1>Blokjes Heaven</h1></div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">Blokjes Heaven</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <main class="grid">
       <div class="header-image-container">blokje hehe</div>
       <div class="welcome">
@@ -67,11 +82,15 @@
 
       <div class="images">blokje 2</div>
 
-      <div class="images grid-row-span-2">blokje 3</div>
+      <div class="images">blokje 3</div>
 
       <div class="images">blokje 4</div>
 
       <div class="images grid-col-span-2">blokje 5</div>
+
+      <div class="images">blokje 6</div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
